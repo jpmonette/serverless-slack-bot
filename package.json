@@ -1,0 +1,34 @@
+{
+  "name": "serverless-salesforce-slack",
+  "version": "1.0.0",
+  "main": "./build/app.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf build && mkdir build",
+    "build": "webpack",
+    "start": "node build/app.js",
+    "deploy": "yarn build && up"
+  },
+  "dependencies": {
+    "@slack/client": "^3.16.0",
+    "babel-polyfill": "^6.26.0",
+    "cheerio": "^1.0.0-rc.2",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "strong-soap": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.7",
+    "@types/koa": "^2.0.44",
+    "@types/koa-bodyparser": "^4.2.0",
+    "@types/node": "^9.4.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "ts-loader": "^4.0.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
+  }
+}

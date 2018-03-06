@@ -1,0 +1,9 @@
+*.md
+*.ts
+assets
+CONTRIBUTORS
+LICENSE
+README.md
+tsconfig.json
+webpack.config.js
+yarn.lock

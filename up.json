@@ -1,0 +1,8 @@
+{
+  "name": "salesforce-slack-bot-api",
+  "profile": "salesforce-slack-bot-api",
+  "environment": {
+    "SLACK_TOKEN": "[my-api-token]",
+    "SLACK_CHANNEL": "sales"
+  }
+}
